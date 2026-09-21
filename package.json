@@ -1,8 +1,12 @@
 {
-  "name": "escrowx-usdt-verifier-v087",
+  "name": "escrowx-usdt-verifier-v088",
   "version": "0.0.87",
   "private": true,
   "main": "usdt-server-v087-deep-transfer-diagnostic.js",
-  "scripts": {"start": "node usdt-server-v087-deep-transfer-diagnostic.js"},
-  "engines": {"node": ">=18"}
+  "scripts": {
+    "start": "node usdt-server-v087-deep-transfer-diagnostic.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }
