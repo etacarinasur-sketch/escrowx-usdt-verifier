@@ -1,13 +1,9 @@
 {
-  "name": "escrowx-usdt-verifier-v085-any-wallet",
-  "version": "0.0.85",
+  "name": "escrowx-usdt-verifier",
+  "version": "0.86.0",
   "private": true,
-  "description": "EscrowX USDT BSC proof verifier; blockchain verification only, financial attribution remains in EscrowX.",
-  "main": "usdt-server-v085-any-wallet.js",
-  "scripts": {
-    "start": "node usdt-server-v085-any-wallet.js"
-  },
-  "engines": {
-    "node": ">=20"
-  }
+  "description": "ESCROW X USDT BSC proof verifier v086",
+  "main": "usdt-server-v086-transfer-match-repaired.js",
+  "scripts": {"start":"node usdt-server-v086-transfer-match-repaired.js"},
+  "engines": {"node": ">=18"}
 }
