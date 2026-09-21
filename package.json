@@ -1,9 +1,8 @@
 {
-  "name": "escrowx-usdt-verifier",
-  "version": "0.86.0",
+  "name": "escrowx-usdt-verifier-v087",
+  "version": "0.0.87",
   "private": true,
-  "description": "ESCROW X USDT BSC proof verifier v086",
-  "main": "usdt-server-v086-transfer-match-repaired.js",
-  "scripts": {"start":"node usdt-server-v086-transfer-match-repaired.js"},
+  "main": "usdt-server-v087-deep-transfer-diagnostic.js",
+  "scripts": {"start": "node usdt-server-v087-deep-transfer-diagnostic.js"},
   "engines": {"node": ">=18"}
 }
