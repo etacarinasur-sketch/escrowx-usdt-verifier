@@ -1,12 +1,9 @@
 {
-  "name": "escrowx-usdt-verifier-v088",
-  "version": "0.0.87",
+  "name": "escrowx-usdt-verifier-v089",
+  "version": "0.0.1",
   "private": true,
-  "main": "usdt-server-v087-deep-transfer-diagnostic.js",
-  "scripts": {
-    "start": "node usdt-server-v087-deep-transfer-diagnostic.js"
-  },
-  "engines": {
-    "node": ">=18"
-  }
+  "description": "ESCROW X USDT blockchain proof verifier v089 explicit Transfer topic matching",
+  "main": "usdt-server-v089-explicit-topic-match.js",
+  "scripts": {"start":"node usdt-server-v089-explicit-topic-match.js"},
+  "engines": {"node": ">=18"}
 }

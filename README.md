@@ -1,13 +1,24 @@
-ESCROW X — USDT Verifier v088 COMPACT TRANSFER DIAGNOSTIC
+# ESCROW X — USDT Verifier v089 EXPLICIT TOPIC MATCH
 
-Based directly on v087. Diagnostic-only continuation.
+Isolated continuation of v088.
 
-Purpose:
-- Preserve the exact v087 verification and financial rules.
-- Make the failure diagnostic compact enough for the EscrowX popup.
-- Show receipt log count, USDT log count, Transfer-topic count, and compact USDT log topic/address/data details.
+## Purpose
 
-No balance, ledger, treasury, custody, attribution, wallet authorization, or credit logic is changed.
+Diagnose and robustly compare the standard ERC-20 `Transfer` event indexed topics against the submitted sender and the fixed ESCROW X custody receiver.
 
-Start command:
-node usdt-server-v088-compact-transfer-diagnostic.js
+## Fixed rules
+
+- BSC Mainnet / Chain ID 56
+- USDT contract: `0x55d398326f99059fF775485246999027B3197955`
+- Current custody receiver: `0xbf94435dc4e7233c50691e6bcabf52b778be4751`
+- Any valid BSC sender may provide blockchain proof
+- Proof-only server
+- Server never changes balances, Ledger, Treasury, Deposit Intent, wallet authorization, or Financial Integrity state
+
+## v089 change
+
+Only the Transfer-topic matching/diagnostic layer changes. It compares both the raw 32-byte indexed topics and their decoded last-20-byte addresses, and exposes the expected versus received values when no match is found.
+
+## Start
+
+`node usdt-server-v089-explicit-topic-match.js`
