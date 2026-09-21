@@ -1,9 +1,9 @@
 {
-  "name": "escrowx-usdt-verifier-v089",
-  "version": "0.0.1",
+  "name": "escrowx-usdt-verifier-v090",
+  "version": "1.0.0",
   "private": true,
-  "description": "ESCROW X USDT blockchain proof verifier v089 explicit Transfer topic matching",
-  "main": "usdt-server-v089-explicit-topic-match.js",
-  "scripts": {"start":"node usdt-server-v089-explicit-topic-match.js"},
+  "description": "ESCROW X USDT blockchain proof verifier v090",
+  "main": "usdt-server-v090-transfer-topic-repair.js",
+  "scripts": {"start":"node usdt-server-v090-transfer-topic-repair.js"},
   "engines": {"node": ">=18"}
 }

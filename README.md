@@ -1,24 +1,21 @@
-# ESCROW X — USDT Verifier v089 EXPLICIT TOPIC MATCH
+# ESCROW X — USDT Verifier v090 TRANSFER TOPIC REPAIR
 
-Isolated continuation of v088.
+Isolated successor to v089.
 
-## Purpose
+## Single repair
+The verifier's `TRANSFER_TOPIC` constant is changed to the exact `topic0` observed in the v089 diagnostic for the submitted transaction.
 
-Diagnose and robustly compare the standard ERC-20 `Transfer` event indexed topics against the submitted sender and the fixed ESCROW X custody receiver.
-
-## Fixed rules
-
-- BSC Mainnet / Chain ID 56
+## Unchanged
+- BNB Smart Chain Mainnet, Chain ID 56
 - USDT contract: `0x55d398326f99059fF775485246999027B3197955`
-- Current custody receiver: `0xbf94435dc4e7233c50691e6bcabf52b778be4751`
-- Any valid BSC sender may provide blockchain proof
-- Proof-only server
-- Server never changes balances, Ledger, Treasury, Deposit Intent, wallet authorization, or Financial Integrity state
+- Current ESCROW X custody receiver: `0xbf94435dc4e7233c50691e6bcabf52b778be4751`
+- ANY_BSC_SENDER proof policy
+- Sender/receiver/amount matching
+- Confirmation checks
+- Proof-only behavior
+- No balance, Ledger, Treasury, wallet authorization, Deposit Intent, RBL or REVO changes
 
-## v089 change
-
-Only the Transfer-topic matching/diagnostic layer changes. It compares both the raw 32-byte indexed topics and their decoded last-20-byte addresses, and exposes the expected versus received values when no match is found.
-
-## Start
-
-`node usdt-server-v089-explicit-topic-match.js`
+## Start command
+```bash
+node usdt-server-v090-transfer-topic-repair.js
+```
